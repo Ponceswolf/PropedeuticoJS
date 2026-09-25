@@ -1,7 +1,8 @@
 # PropedeuticoJS
-## Título 2
-hola
-### Título 3
+![image alt](https://github.com/Ponceswolf/PropedeuticoJS/blob/a1abd1224da716b71c398df9e9822638cfd8ca35/GitHub_Copilot_Lockup_Black.png)
+## Título 2 Hola
+Y
+### Título 3 como estan?
 
 Esto es un párrafo que debería de tener una **descripción detallada** del proyecto
 
