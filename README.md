@@ -1,5 +1,5 @@
 # PropedeuticoJS
-![image alt](GitHub_Copilot_Lockup_White.png)git add .
+![image alt](GitHub_Copilot_Lockup_White.png)
 ## Título 2 Hola
 Y
 ### Título 3 como estan?
