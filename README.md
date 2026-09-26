@@ -1,5 +1,5 @@
 # PropedeuticoJS
-![image alt](https://github.com/Ponceswolf/PropedeuticoJS/blob/a1abd1224da716b71c398df9e9822638cfd8ca35/GitHub_Copilot_Lockup_Black.png)
+![image alt](GitHub_Copilot_Lockup_White.png)git add .
 ## Título 2 Hola
 Y
 ### Título 3 como estan?
