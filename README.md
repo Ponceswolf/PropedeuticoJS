@@ -1,8 +1,8 @@
 # PropedeuticoJS
 ![image alt](GitHub_Copilot_Lockup_White.png)
 ## Título 2 Hola
-Y
-### Título 3 como estan?
+Como estas?
+### Título 3
 
 Esto es un párrafo que debería de tener una **descripción detallada** del proyecto
 
