@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Panel Interactivo</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      color: #222;
+    }
+    header, nav, section {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    h1 { color: #4a4ae0; }
+    #menu { display: flex; gap: 1rem; list-style: none; padding: 0; }
+    input, button, select { padding: 0.5rem; }
+    .caja {
+      width: 120px;
+      height: 60px;
+      background: #4a4ae0;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .resaltado { outline: 3px solid gold; }
+    .completada { text-decoration: line-through; color: #999; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="titulo">Mi Panel Interactivo</h1>
+    <p id="subtitulo">Aprende a manipular el DOM y a manejar eventos</p>
+  </header>
+
+  <nav>
+    <ul id="menu">
+      <li><a href="#tarjeta">Tarjeta</a></li>
+      <li><a href="#lista">Lista</a></li>
+      <li><a href="#formulario">Formulario</a></li>
+      <li><a href="#contador">Contador</a></li>
+      <li><a href="#color">Color</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="tarjeta">
+      <h2 class="encabezado">Tarjeta de ejemplo</h2>
+      <p id="descripcion">Pasa el ratón por encima.</p>
+      <button id="btn-saludar">Saludar</button>
+    </section>
+
+    <section id="lista">
+      <h2>Mis tareas</h2>
+      <ul id="lista-tareas">
+        <li class="item">Estudiar el DOM</li>
+        <li class="item">Practicar eventos</li>
+      </ul>
+    </section>
+
+    <section id="formulario">
+      <h2>Agregar tarea</h2>
+      <form id="form-tarea">
+        <input type="text" id="nueva-tarea" placeholder="Escribe una tarea...">
+        <button type="submit">Agregar</button>
+      </form>
+      <p id="mensaje"></p>
+    </section>
+
+    <section id="contador">
+      <h2>Contador</h2>
+      <button id="btn-menos">-</button>
+      <span id="valor-contador">0</span>
+      <button id="btn-mas">+</button>
+    </section>
+
+    <section id="color">
+      <h2>Caja de color</h2>
+      <div id="caja" class="caja"></div>
+      <select id="selector-color">
+        <option value="#4a4ae0">Azul</option>
+        <option value="#22a06b">Verde</option>
+        <option value="#e04a4a">Rojo</option>
+        <option value="#f0a500">Naranja</option>
+      </select>
+      <button id="btn-color">Color aleatorio</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Sesión 7 — Scope, DOM y Eventos</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
