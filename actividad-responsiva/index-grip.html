@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, auto);
+            gap: 4px;
+        }
+        header{
+            background-color: green;
+        }
+        aside{
+            background-color: red;
+        }
+        section#titulo {
+            background-color: purple;
+        }
+        .secciones {
+            background-color: coral;
+            grid-column: span 1;
+            height: 200px;
+        }
+        #articulos {
+            min-height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            /*grid-column: span 2;*/
+        }
+        article {
+            background-color: blue;
+            flex-basis: 20%;
+            height: 160px;
+            border: solid 4px white;
+        }
+        footer {
+            background-color: green;
+        }
+        header, aside, section#titulo, article, .secciones, footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header, section#titulo,footer{
+            height: 85px;
+        }
+
+        @media (min-width: 600px) and (max-width: 1023px){
+            *{
+                background-color: gray;
+            }
+            header,.seccion#titulo,footer {
+                color: yellow;
+                height: 85px;
+            }
+        }
+
+        @media (min-width: 1023px){
+            *{
+                background-color: gray;
+            }
+            article{
+                background-color: blue;
+                flex-basis: 26%;
+                height: 160px;
+                border: solid 2px #fff;
+            }
+            header,.seccion#titulo,footer {
+                color: yellow;
+                height: 85px;
+            }
+        }
+
+        /*escritorio*/
+        @media (min-width: 700px) {
+            body {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, auto);
+            gap: 4px;
+        }
+
+        header, section#titulo, article, .secciones, footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header {
+            background-color: green;
+            /*grid-column-start: 1;
+            grid-column-end: 4;*/
+
+            grid-column: 1 / 4;
+            display: flex;
+        }
+        aside {
+            background-color: red;
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-row: 2 / 5;
+            height: auto;
+        }
+        section#titulo {
+            background-color: purple;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .secciones {
+            background-color: coral;
+            grid-column: span 1;
+            height: 200px;
+        }
+        #articulos {
+            min-height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            /*grid-column: span 2;*/
+        }
+        article {
+            background-color: blue;
+            flex-basis: 20%;
+            height: 160px;
+            border: solid 4px white;
+        }
+        footer {
+            background-color: green;
+            grid-column: 1 / 4;
+        }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        Header
+    </header>
+    <aside>
+        <div>ASIDE</div>
+    </aside>
+
+    <section id="titulo">
+        <div>TITULO</div>
+    </section>
+
+    <section class="secciones sec1">SECCIÓN1</section>
+    <section class="secciones sec2">SECCIÓN2</section>
+
+    <div id="articulos">
+        <article>Articulo 1</article>
+        <article>Articulo 2</article>
+        <article>Articulo 3</article>
+        <article>Articulo 4</article>
+        <article>Articulo 5</article>
+        <article>Articulo 6</article>
+        <article>Articulo 7</article>
+        <article>Articulo 8</article>
+        <article>Articulo 9</article>
+        <article>Articulo 10</article>
+    </div>
+
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>

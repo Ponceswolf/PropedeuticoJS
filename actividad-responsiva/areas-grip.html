@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: green;
+    }
+
+    aside {
+        background-color: red;
+    }
+    section#titulo {
+        background-color: purple;
+    }
+    .secciones {
+        background-color: coral;
+    }
+    article {
+        background-color: blue;
+    }
+    footer{
+        background-color: green;
+    }
+    @media (min-width: 1024px) {
+        body {
+        display: grid;
+        gap: 3px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "header header header"
+        "aside titulo titulo"
+        "aside seccion-1 seccion-2"
+        "aside article article"
+        "footer footer footer";
+        min-width: 100vh;
+        }
+
+        header{
+            grid-area: header;
+        }
+        aside {
+            grid-area: aside;
+        }
+        section#titulo {
+            grid-area: titulo;
+        }
+        .sec-1{
+            grid-area: seccion-1;
+        }
+        .sec-2{
+            grid-area: seccion-2;
+        }
+        #articulos {
+            grid-area: articulo;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        header,
+        section#titulo,
+        footer{
+            height: 85px;
+        }
+
+        article{
+            flex-basis: 20%;
+            height: 160px;
+            box-sizing: solid 2px white;
+        }
+        footer {
+            grid-area: footer;
+            height: 160px;
+        }
+        article {
+            height: 200px;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <header>
+        Header
+    </header>
+    <aside>
+        <div>ASIDE</div>
+    </aside>
+
+    <section id="titulo">
+        <div>TITULO</div>
+    </section>
+
+    <section class="secciones sec1">SECCIÓN1</section>
+    <section class="secciones sec2">SECCIÓN2</section>
+
+    <div id="articulos">
+        <article>Articulo 1</article>
+        <article>Articulo 2</article>
+        <article>Articulo 3</article>
+        <article>Articulo 4</article>
+        <article>Articulo 5</article>
+        <article>Articulo 6</article>
+        <article>Articulo 7</article>
+        <article>Articulo 8</article>
+        <article>Articulo 9</article>
+        <article>Articulo 10</article>
+    </div>
+
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>
